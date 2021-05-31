@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Homepage</title>
+        <meta name="author" content="Sina" />
+        <meta name="description" content="Index"/>
+        <meta charset="UTF-8">
+    
+        <style>
+
+            body {
+                background-image: url("resource/SLBackground.jpg");
+                margin: auto;
+            }
+            #player1, #player2, #player3 {
+                background-color: #4CAF50;
+                border: solid 2px white;
+                border-radius: 10px;
+                font-size: 16px;
+                color: white;
+                padding: 15px 32px;
+                margin: 0;
+                position: absolute;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                width: 150px;
+                
+            }
+            #player1 {top: 50%;}
+            #player2 {top: 60%;}
+            #player3 {top: 70%;}
+
+            #btnTutorial {
+                background-color: #4CAF50;
+                border: solid 2px white;
+                border-radius: 10px;
+                font-size: 16px;
+                color: white;
+                padding: 15px 27px;
+                margin: 0;
+                position: absolute;
+                top: 80%;
+                left: 50%;
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                width: 150px;
+            }
+                
+            h1 {
+                color: white;
+                text-align: center;
+                padding: 1px;
+                position: relative;
+                top: 75px;
+                font-family: Tahoma, Geneva, sans-serif;
+                font-size: 3rem;
+            }
+            h2 {
+                color: white;
+                text-align: center;
+                padding: 1px;
+                position: relative;
+                top: 75px;
+                font-family: Tahoma, Geneva, sans-serif;
+                font-size: 2rem;
+            }
+            #infoBox {
+                display: none;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 2;
+                font-size: 18px;
+                background-color: #4CAF50;
+                border: solid 2px white;
+                border-radius: 50px;
+                color: white;
+                text-align: center;
+                padding: 20px;
+                width: 40%;
+                min-width: 200px;
+                margin: auto;
+                margin-top: 150px;
+            }
+            #btnProceed {
+                display: none;
+                background-color: #4CAF50;
+                border: solid 2px white;
+                border-radius: 150px;
+                color: white;
+                padding: 15px 42px;
+                text-align: center;
+                font-size: 16px; 
+                position: absolute;
+                bottom: 20px;
+                right: 50px;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <h1 id= 'gameName'>Snakes and Ladders</h1>
+        <h2 id='credit'>By: Sina Akhavan</h2>
+
+        <div id="infoBox">
+            <p> Whoever rolls six enters the board!               <br/>
+                If you roll six you get one more!                 <br/>
+                Ladders climb you up and Snakes bite you down,  <br/>
+                Get to the last square to achive the throne!
+            </p>
+        </div>
+    
+        <button onclick="location.href='2Players.html'" type="button" id="player1">2 Players</button>
+        <button onclick="location.href='3Players.html'" type="button" id="player2">3 Players</button>
+        <button onclick="location.href='4Players.html'" type="button" id="player3">4 Players</button>
+        <button onclick="tutorial()" type="button" id="btnTutorial">How to Play</button>
+        <button onclick="proceed()" type="button" id="btnProceed">Ok</button>
+    </body>
+    <script>
+        function tutorial() {
+            document.getElementById("player1").style.display = "none"
+            document.getElementById("player2").style.display = "none"
+            document.getElementById("player3").style.display = "none"
+            document.getElementById("gameName").style.display = "none"
+            document.getElementById("credit").style.display = "none"
+            document.getElementById("btnTutorial").style.display = "none"
+            document.getElementById("infoBox").style.display = "block"
+            document.getElementById("btnProceed").style.display = "block"
+        }
+        function proceed() {
+            document.getElementById("player1").style.display = "block"
+            document.getElementById("player2").style.display = "block"
+            document.getElementById("player3").style.display = "block"
+            document.getElementById("gameName").style.display = "block"
+            document.getElementById("credit").style.display = "block"
+            document.getElementById("btnTutorial").style.display = "block"
+            document.getElementById("infoBox").style.display = "none"
+            document.getElementById("btnProceed").style.display = "none"
+        }
+    </script>
+</html>
+

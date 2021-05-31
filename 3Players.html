@@ -1,0 +1,54 @@
+<!--This html + js is based on the 4 player version.
+That's why there might be wierd coding choices.
+For the complete work, check the 4 player version.-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Snakes & Ladders</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.js"></script>
+  </head>
+
+  <body>
+    <!--Buttons-->
+    <div> <button onclick="diceRollProcess()" type="button" id="btnRoll">Roll</button>                   </div>
+    <div> <button onclick="rematch()" type="button" id="btnRematch">Rematch  </button>                   </div>
+    <div> <button onclick="location.href='Index.html'" type="button" id="btnReturn">Return to Homepage</button> </div>
+    
+    <!--Snakes & Ladders-->
+    <div>  <img src="resource/SnL.png" id=SnakesLadders>  </div>
+
+    <!--Pieces-->
+    <div>  <img src="resource/P1 Blue.png" id="P1_Blue">      </div>
+    <div>  <img src="resource/P2 Red.png" id="P2_Red">        </div>
+    <div>  <img src="resource/P3 Green.png" id="P3_Green">    </div>
+
+    <!--Dice Images-->
+    <div>  <img src="resource/Dice1.png" id="dice1">   </div>
+    <div>  <img src="resource/Dice2.png" id="dice2">   </div>
+    <div>  <img src="resource/Dice3.png" id="dice3">   </div>
+    <div>  <img src="resource/Dice4.png" id="dice4">   </div>
+    <div>  <img src="resource/Dice5.png" id="dice5">   </div>
+    <div>  <img src="resource/Dice6.png" id="dice6">   </div>
+
+    <!--Texts-->
+    <p id="blueText">Blue's Turn!</p>
+    <p id="redText">Red's Turn!</p>
+    <p id="greenText">Green's Turn!</p>
+
+    <p id= "blueRank">     </p>  <p id= "blueRankSuffix">    </p>
+    <p id= "redRank">      </p>  <p id= "redRankSuffix">     </p>
+    <p id= "greenRank">    </p>  <p id= "greenRankSuffix">   </p>
+
+    <p id= "finalText" >Good Game!</p>
+
+    <!--JS Source-->
+    <script src="3P JavaS.js"></script>
+  </body>
+</html>

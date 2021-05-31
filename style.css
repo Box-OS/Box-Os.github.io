@@ -1,0 +1,185 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+#P1_Blue {
+  display: block;
+  height: 60px;
+  position: absolute;
+  left: 905px;
+  top: 405px
+}
+
+#P2_Red {
+  display: block;
+  height: 60px;
+  position: absolute;
+  left: 985px;
+  top: 405px
+}
+
+#P3_Green {
+  display: block;
+  height: 60px;
+  position: absolute;
+  left: 905px;
+  top: 480px
+}
+
+#P4_Yellow {
+  display: block;
+  height: 60px;
+  position: absolute;
+  left: 985px;
+  top: 480px
+}
+
+body {
+  background-image: url(https://apkplaygame.com/wp-content/uploads/2016/11/3276-100-snakes-and-ladders-h8FfBBBoe.jpg);
+  background-repeat: repeat-x;
+}
+
+#btnRoll, #btnRematch, #btnReturn {
+  background-color: #3a3b3c;
+  border: solid 2px black;
+  border-radius: 150px;
+  color: #d6d6d6;
+  text-align: center;
+  font-size: 16px; 
+  position: absolute;
+  
+}
+#btnRoll {
+  padding: 15px 42px;
+  left: 915px;
+  top: 100px
+}
+#btnRematch {
+  padding: 15px 30px;
+  left: 912px;
+  top: 695px
+}
+#btnReturn {
+  padding: 15px 15px;
+  left: 885px;
+  top: 770px
+}
+
+#SnakesLadders {
+  height: 800px;
+  position: absolute;
+  left: 30px;
+  top: 30px
+}
+
+#dice1, #dice2, #dice3, #dice4, #dice5, #dice6 {
+  display: none;
+  height: 50px;
+  position: absolute;
+  left: 947px;
+  top: 200px
+}
+
+#blueText, #redText, #greenText, #yellowText {
+  text-shadow: 1px 1px 2px black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 15;
+  position: absolute;
+  top: 320px; 
+  
+}
+#blueText {
+  display: block;
+  left: 910px;
+  color:#4c8bf5;
+}
+#redText {
+  display: none;
+  left: 913px;
+  color: #FF3E30;
+}
+#greenText {
+  display: none;
+  left: 903px;
+  color: #0F9D58;
+}
+#yellowText {
+  display: none;
+  left: 900px;
+  color: #ffce44;
+}
+
+#blueRank, #redRank, #greenRank, #yellowRank {
+  display: none;
+  font-family: 'Copperplate';
+  font-size: 60px;
+  font-weight: bold;
+  position: absolute;
+}
+#blueRank {
+  color:#4c8bf5;
+  left: 910px;
+  top: 345px
+}
+#redRank {
+  color:#FF3E30;
+  left: 985px;
+  top: 345px
+}
+#greenRank {
+  color: #0F9D58;
+  left: 910px;
+  top: 420px
+}
+#yellowRank {
+  color: #ffce44;
+  left: 985px;
+  top: 420px
+}
+
+#blueRankSuffix, #redRankSuffix, #greenRankSuffix, #yellowRankSuffix {
+  display: none;
+  font-family: 'Copperplate';
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+}
+#blueRankSuffix {
+  color:#4c8bf5;
+  left: 940px;
+  top: 410px
+}
+#redRankSuffix {
+  color:#FF3E30;
+  left: 1015px;
+  top: 410px
+}
+#greenRankSuffix {
+  color: #0F9D58;
+  left: 940px;
+  top: 485px
+}
+#yellowRankSuffix {
+  color: #ffce44;
+  left: 1015px;
+  top: 485px
+}
+
+#finalText {
+  display: none;
+  color: black;
+  text-shadow: 3px 3px 10px black;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 15;
+  position: absolute;
+  top: 550px;
+  left: 920px;
+}
+
